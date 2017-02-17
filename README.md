@@ -4,11 +4,10 @@ Epiphanies TMK Keyboard Firmware Collection
 This repository includes keyboard and controller firmware projects
 built with [`tmk_core`][tmk_core] keyboard library.
 
-The latest source code for the core library is available here:
-<http://github.com/tmk/tmk_keyboard>
-
 The latest source code for the individual projects is available here:
 <https://github.com/BathroomEpiphanies/epiphanies_tmk_keyboard>
+
+[tmk_core]: http://github.com/tmk/tmk_core
 
 Projects
 --------
