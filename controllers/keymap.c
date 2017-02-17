@@ -66,7 +66,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   {KC_##KA7,  KC_##KB7,  KC_##KC7,  KC_##KD7,  KC_##KE7,  KC_##KF7,  KC_##KG7,  KC_##KH7,  KC_##KI7,  KC_##KJ7,  KC_NO,     KC_NO,     KC_NO,     KC_NO,     KC_##KO7,  KC_NO,     KC_##KQ7,  KC_##KR7}  /* 7 */ \
 }
 
-#include "keymap_ansi_iso_jis.h"
+#include "keymap_wezm.h"
 
 #define KEYMAPS_SIZE    (sizeof(keymaps) / sizeof(keymaps[0]))
 #define FN_ACTIONS_SIZE (sizeof(fn_actions) / sizeof(fn_actions[0]))
