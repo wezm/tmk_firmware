@@ -68,32 +68,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "keymap_wezm.h"
 
-#define KEYMAPS_SIZE    (sizeof(keymaps) / sizeof(keymaps[0]))
-#define FN_ACTIONS_SIZE (sizeof(fn_actions) / sizeof(fn_actions[0]))
-
-/* translates key to keycode */
-uint8_t keymap_key_to_keycode(uint8_t layer, keypos_t key) {
-  if (layer < KEYMAPS_SIZE)
-    return pgm_read_byte(&keymaps[(layer)][(key.col)][(key.row)]);
-  else
-    return pgm_read_byte(&keymaps[0][(key.col)][(key.row)]);
-}
-
-/* translates Fn keycode to action */
-action_t keymap_fn_to_action(uint8_t keycode) {
-  action_t action;
-  if (FN_INDEX(keycode) < FN_ACTIONS_SIZE)
-    action.code = pgm_read_word(&fn_actions[FN_INDEX(keycode)]);
-  else
-    action.code = ACTION_NO;
-  return action;
-}
-
-
-
-
-
-
 //{ \
 //  /* 0       1         2         3         4         5         6         7               */ \
 //  {KC_NO,    KC_##KA1, KC_NO,    KC_NO,    KC_##KA4, KC_##KA5, KC_NO,    KC_##KA7}, /* A */ \

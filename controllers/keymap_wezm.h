@@ -1,5 +1,5 @@
 
-static const uint8_t PROGMEM keymaps[][MATRIX_COLS][MATRIX_ROWS] = {
+const uint8_t PROGMEM keymaps[][MATRIX_COLS][MATRIX_ROWS] = {
     /* Layer 0: Standard ANSI layer */
     KEYMAP(\
          ESC,      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11,  F12,   PSCR,SLCK,PAUS,                         \
@@ -18,7 +18,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_COLS][MATRIX_ROWS] = {
          TRNS,TRNS,TRNS,               TRNS,               TRNS,TRNS,TRNS,TRNS,   TRNS,TRNS,TRNS,    TRNS,TRNS)
 };
 
-static const uint16_t PROGMEM fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
     [0] = ACTION_LAYER_MOMENTARY(1),
     [1] = ACTION_LAYER_TAP_KEY(1, KC_TAB),
     [2] = ACTION_MACRO(0),
