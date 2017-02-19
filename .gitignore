@@ -1,0 +1,9 @@
+/controllers/keymap_wezm_private.h
+main.eep
+main.elf
+main.hex
+main.lss
+main.map
+main.sym
+obj_main
+.dep
