@@ -6,7 +6,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_COLS][MATRIX_ROWS] = {
          FN1, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,   DEL, END, PGDN,    P7,  P8,  P9,  PPLS, \
          LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,      ENT,                      P4,  P5,  P6,        \
          LSFT,NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT ,SLSH,     RSFT,        UP,           P1,  P2,  P3,  PENT, \
-         LCTL,LALT,LGUI,               SPC,                FN0 ,RALT,APP ,RCTL,   LEFT,DOWN,RGHT,    P0,  PDOT),          \
+         LCTL,LALT,LGUI,               SPC,                RGUI,RALT,APP ,RCTL,   LEFT,DOWN,RGHT,    P0,  PDOT),          \
     /* Layer 1: Function layer */
     KEYMAP(\
          TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MPLY,MNXT,MUTE,VOLD,VOLU,   TRNS,TRNS,TRNS,                         \
