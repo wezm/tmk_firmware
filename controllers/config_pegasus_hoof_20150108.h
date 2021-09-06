@@ -33,7 +33,7 @@
 #define MATRIX_COLS 8
 
 /* Set 0 if need no debouncing */
-#define DEBOUNCE    5
+#define DEBOUNCE    7
 
 /* key combination for command */
 #define IS_COMMAND() (keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
