@@ -14,7 +14,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_COLS][MATRIX_ROWS] = {
          FN0 ,LALT,LGUI,               SPC,                RGUI,RALT,APP ,RCTL,   LEFT,DOWN,RGHT,    P0,  PDOT),          \
     /* Layer 1: Function layer */
     KEYMAP(\
-         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MPLY,MNXT,MUTE,VOLD,VOLU,   TRNS,TRNS,TRNS,                         \
+         TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MPRV,MPLY,MNXT,MUTE,VOLD,VOLU,   TRNS,TRNS,BOOTLOADER,                         \
          GRV ,TRNS,FN2 ,FN3 ,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,FN7 ,TRNS,TRNS,TRNS,   TRNS,TRNS,TRNS,    TRNS,TRNS,TRNS,TRNS, \
          TRNS,TRNS,FN4 ,TRNS,TRNS,TRNS,HOME,PGDN,PGUP,END ,FN8 ,TRNS,TRNS,TRNS,   TRNS,TRNS,TRNS,    TRNS,TRNS,TRNS,TRNS, \
          TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,LEFT,DOWN,UP  ,RGHT,TRNS,TRNS,     TRNS,                      TRNS,TRNS,TRNS,      \
@@ -70,7 +70,8 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
             return (record->event.pressed ?
                     MACRO( T(W), T(E), T(S), D(LSHIFT), T(2), U(LSHIFT), T(W), T(E), T(Z), T(M), T(DOT), T(N), T(E), T(T), END ) : MACRO_NONE );
         case MACRO_WORK_EMAIL:
-            return keymap_wezm_macro_work_email(record, mid, opt);
+            return MACRO_NONE;
+            // return keymap_wezm_macro_work_email(record, mid, opt);
         case MACRO_FNAME:
             // Wesley
             return (record->event.pressed ?
